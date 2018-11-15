@@ -72,3 +72,6 @@ Temporary Items
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+/MongoDB/node_modules/
+/sls/node_modules/
+/Test/node_modules/
