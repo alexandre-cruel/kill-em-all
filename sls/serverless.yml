@@ -1,0 +1,18 @@
+service: sls
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  city:
+    handler: city.cityHandler
+    events:
+    - http: POST /city
+  superhero:
+    handler: superhero.superHandler
+    events:
+      - http : POST /superhero
+
+plugins:
+- serverless-offline

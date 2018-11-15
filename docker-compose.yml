@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test:
+    build: sls/
+    environment:
+    - PORT=3000
+    - CITY_URL=http://city:3000/
+    - SUPERHERO_URL=http://hero:3000/
+    ports:
+    - "3050:3000"
